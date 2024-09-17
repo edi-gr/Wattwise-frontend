@@ -5,7 +5,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import { useRouter } from "next/navigation";
 import { Typography, Button, Alert } from "@mui/material";
-import { FaLightbulb, FaSolarPanel, FaLeaf, FaChartLine } from 'react-icons/fa';
+import { FaLightbulb, FaSolarPanel, FaLeaf, FaChartLine } from "react-icons/fa";
 
 const Login = () => {
   const router = useRouter();
@@ -41,12 +41,15 @@ const Login = () => {
               WattWise
             </Typography>
             <Typography variant="h5" className="text-[#B8DBD9]">
-              Empowering BITS Goa's Sustainable Future
+              Empowering BITS Goa&apos;s Sustainable Future
             </Typography>
           </div>
 
           {accessDenied && (
-            <Alert severity="error" className="mb-6 bg-red-500 bg-opacity-90 text-white w-full">
+            <Alert
+              severity="error"
+              className="mb-6 bg-red-500 bg-opacity-90 text-white w-full"
+            >
               Access Denied. Only BITS Goa email accounts are allowed.
             </Alert>
           )}
@@ -71,7 +74,10 @@ const Login = () => {
             />
           </div>
 
-          <Typography variant="body2" className="mt-6 text-[#B8DBD9] text-center">
+          <Typography
+            variant="body2"
+            className="mt-6 text-[#B8DBD9] text-center"
+          >
             By logging in, you agree to our Terms of Service and Privacy Policy.
           </Typography>
         </div>
@@ -88,13 +94,20 @@ const Login = () => {
             Monitor. Analyze. Optimize.
           </Typography>
           <Typography variant="h6" className="text-[#B8DBD9] mb-8">
-            Join us in our mission to create a more sustainable BITS Goa. 
-            Together, we can make a difference in energy consumption and environmental impact.
+            Join us in our mission to create a more sustainable BITS Goa.
+            Together, we can make a difference in energy consumption and
+            environmental impact.
           </Typography>
           <div className="grid grid-cols-3 gap-6">
-            {['Reduce Energy', 'Save Costs', 'Go Green'].map((item, index) => (
-              <div key={index} className="bg-[#507DBC] bg-opacity-20 p-4 rounded-lg">
-                <Typography variant="body1" className="text-[#B8DBD9] font-semibold">
+            {["Reduce Energy", "Save Costs", "Go Green"].map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#507DBC] bg-opacity-20 p-4 rounded-lg"
+              >
+                <Typography
+                  variant="body1"
+                  className="text-[#B8DBD9] font-semibold"
+                >
                   {item}
                 </Typography>
               </div>
