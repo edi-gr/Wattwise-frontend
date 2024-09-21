@@ -54,7 +54,7 @@ const Login = () => {
             </Alert>
           )}
 
-          <div className="w-full max-w-xs translate-x-16">
+          <div className="max-w-xs">
             <GoogleLogin
               clientId="752300815973-ptjap2259e5m868hggcan5j9plgvbk50.apps.googleusercontent.com"
               onSuccess={handleLoginSuccess}
